@@ -25,6 +25,6 @@ int main(){
     cout << "in derived calss object, y ="<< b.gety() << endl;
     a=b;
     cout << "after upcasting in base class object, x ="<< a.getx() << endl;
-   // cout << "after upcasting in base calss object, y ="<< a.gety() << endl;
+    cout << "after upcasting in base calss object, y ="<< a.gety() << endl;
     return 0;
 }

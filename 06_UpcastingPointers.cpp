@@ -1,4 +1,4 @@
-//polymorhism- slide8
+//polymorhism- slide 8
 #include <cstdlib>
 #include <iostream>
 using namespace std;
@@ -27,6 +27,6 @@ int main(){
     cout << "in derived calss pointer y ="<< pb->gety() << endl;
     pa=pb;
     cout << "after upcasting, in base class pointer x ="<< pa->getx() << endl;
-    //cout << "after upcasting, in base calss pointer y ="<< pa->gety() << endl;
+    cout << "after upcasting, in base calss pointer y ="<< pa->gety() << endl;
     return 0;
 }

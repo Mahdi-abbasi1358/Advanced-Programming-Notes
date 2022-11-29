@@ -1,14 +1,14 @@
-//polymorphism- slide 11
+//polymorphism- slide 9
 #include <cstdlib>
 #include <iostream>
 using namespace std;
 class A {
     public: 
-    virtual void f() {cout << "A::f" << endl;}
+    void f() {cout << "A::f" << endl;}
 };
 class B: public A {
     public: 
-    void f(int x) {cout << "B::f" << endl;}
+    void f() {cout << "B::f" << endl;}
 };
 int main(){
     B b;
