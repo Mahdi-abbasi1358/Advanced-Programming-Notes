@@ -1,11 +1,11 @@
-//polymorphism- Demo 10
+//polymorphism- Demo 9
 #include <cstdlib>
 #include <iostream>
 using namespace std;
 
 class A {
     public: 
-         ~A(){cout<<" A() destructor invoked\n";};
+        virtual ~A(){cout<<" A() destructor invoked\n";};
 };
 class B: public A {
     private:

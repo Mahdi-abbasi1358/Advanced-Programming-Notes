@@ -1,4 +1,4 @@
-//polymorphism- slide 7
+//polymorphism- demo3
 #include <cstdlib>
 #include <iostream>
 using namespace std;
@@ -20,11 +20,11 @@ class B: public A {
 int main(){
     A a(1);
     B b(2,3);
-    cout << "in base calss object, x ="<< a.getx() << endl;
-    cout << "in derived calss object, x ="<< b.getx() << endl;
-    cout << "in derived calss object, y ="<< b.gety() << endl;
+    cout << "a.x ="<< a.getx() << endl;
+    cout << "b.x ="<< b.getx() << endl;
+    cout << "b.y ="<< b.gety() << endl;
     a=b;
-    cout << "after upcasting in base class object, x ="<< a.getx() << endl;
-    cout << "after upcasting in base calss object, y ="<< a.gety() << endl;
+    cout << "after upcast, a.x ="<< a.getx() << endl;
+    cout << "after upcast, a.y ="<< a.gety() << endl;
     return 0;
 }

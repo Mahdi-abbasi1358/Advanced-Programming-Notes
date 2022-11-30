@@ -1,4 +1,4 @@
-//polymorhism- slide 8
+//polymorphism- Demo 3
 #include <cstdlib>
 #include <iostream>
 using namespace std;
@@ -18,15 +18,13 @@ class B: public A {
     
 };
 int main(){
-    A *pa,a(1);
-    B *pb, b(2,3);
-    pa= &a;
-    pb= &b;
-    cout << "pa->x ="<< pa->getx() << endl;
-    cout << "pb.x ="<< pb->getx() << endl;
-    cout << "pb.y ="<< pb->gety() << endl;
-    pa=pb;
-    cout << "after upcast,pb->x ="<< pa->getx() << endl;
-    cout << "after upcast,pb->y ="<< pa->gety() << endl;
+    A a(1);
+    B b(2,3);
+    cout << "a.x ="<< a.getx() << endl;
+    cout << "b.x ="<< b.getx() << endl;
+    cout << "b.y ="<< b.gety() << endl;
+    a=b;
+    cout << "after upcast, a.x ="<< a.getx() << endl;
+    cout << "after upcast, a.y ="<< a.gety() << endl;
     return 0;
 }

@@ -1,19 +1,19 @@
-//polymorphism- Demo 7
+// polymorphism- Demo1
 #include <cstdlib>
 #include <iostream>
 using namespace std;
 class A {
     public: 
-    virtual void f() {cout << "A::f" << endl;}
+    void f(int x) {cout <<"A::f("<< x << ")\n";}
 };
 class B: public A {
     public: 
-    void f(int x) {cout << "B::f" << endl;}
+    void f(int x) {cout <<"B::f("<< x << ")\n";}
 };
 int main(){
+    A a;
     B b;
-    A *pa= &b;
-    
-    pa->f();
+    a.f(1);
+    b.f(2);
     return 0;
 }
